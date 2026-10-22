@@ -1,0 +1,11 @@
+[
+  { "code": "communal-inspection", "scope": "Municipal", "nameEn": "Municipal communal inspection", "nameMk": "Општинска комунална инспекција" },
+  { "code": "communal-utility", "scope": "Municipal", "nameEn": "Public communal utility", "nameMk": "Јавно комунално претпријатие" },
+  { "code": "water-utility", "scope": "Municipal", "nameEn": "Water and sewage utility", "nameMk": "Водовод и канализација" },
+  { "code": "veterinary-hygiene", "scope": "Municipal", "nameEn": "Veterinary hygiene service", "nameMk": "Ветеринарно-хигиенска служба" },
+  { "code": "environmental-inspectorate", "scope": "National", "nameEn": "State Environmental Inspectorate", "nameMk": "Државен инспекторат за животна средина" },
+  { "code": "sanitary-inspectorate", "scope": "National", "nameEn": "State Sanitary and Health Inspectorate", "nameMk": "Државен санитарен и здравствен инспекторат" },
+  { "code": "state-roads", "scope": "National", "nameEn": "Public Enterprise for State Roads", "nameMk": "ЈП за државни патишта" },
+  { "code": "national-forests", "scope": "National", "nameEn": "Public Enterprise National Forests", "nameMk": "ЈП Национални шуми" },
+  { "code": "environment-ministry", "scope": "National", "nameEn": "Ministry of Environment and Physical Planning", "nameMk": "Министерство за животна средина и просторно планирање" }
+]

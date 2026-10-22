@@ -1,0 +1,42 @@
+<section class="filters">
+  <select [ngModel]="filter().municipalityId" (ngModelChange)="setFilter({ municipalityId: $event ?? undefined })">
+    <option [ngValue]="undefined">Сите општини</option>
+    @for (m of municipalities(); track m.id) {
+      <option [ngValue]="m.id">{{ m.nameMk }}</option>
+    }
+  </select>
+  <select [ngModel]="filter().categoryId" (ngModelChange)="setFilter({ categoryId: $event ?? undefined })">
+    <option [ngValue]="undefined">Сите категории</option>
+    @for (c of categories(); track c.id) {
+      <option [ngValue]="c.id">{{ c.nameMk }}</option>
+    }
+  </select>
+  <select [ngModel]="filter().status" (ngModelChange)="setFilter({ status: $event ?? undefined })">
+    <option [ngValue]="undefined">Сите статуси</option>
+    @for (s of statuses; track s) {
+      <option [ngValue]="s">{{ statusLabels[s] }}</option>
+    }
+  </select>
+  <a class="button primary" routerLink="/reports/new">Пријави проблем</a>
+</section>
+
+<div class="layout">
+  <div #map class="map"></div>
+  <aside class="list">
+    <p class="count">{{ total() }} пријави</p>
+    @for (r of reports(); track r.id) {
+      <a class="card" [routerLink]="['/reports', r.id]">
+        @if (r.thumbnailUrl) {
+          <img [src]="r.thumbnailUrl" alt="" />
+        }
+        <div>
+          <strong>{{ r.title }}</strong>
+          <small>{{ r.municipality }} · {{ r.category }}</small>
+          <span class="status" [attr.data-status]="r.status">{{ statusLabels[r.status] }}</span>
+        </div>
+      </a>
+    } @empty {
+      <p>Нема пријави за овие филтри.</p>
+    }
+  </aside>
+</div>

@@ -1,0 +1,101 @@
+<h1>Пријави отпад или загадување</h1>
+
+<form [formGroup]="form" (ngSubmit)="submit()">
+  <label>
+    Општина
+    <select formControlName="municipalityId">
+      <option [ngValue]="0" disabled>Изберете општина</option>
+      @for (m of municipalities(); track m.id) {
+        <option [ngValue]="m.id">{{ m.nameMk }}</option>
+      }
+    </select>
+  </label>
+
+  <fieldset>
+    <legend>Локација</legend>
+    <div #map class="map"></div>
+    <div class="row">
+      <button type="button" (click)="useMyLocation()">Користи ја мојата локација</button>
+      <span class="hint">{{ location() ? 'Локацијата е означена.' : 'Кликнете на мапата за да ја означите локацијата.' }}</span>
+    </div>
+    <input formControlName="addressText" placeholder="Адреса или опис на местото (по избор)" />
+  </fieldset>
+
+  <label>
+    Категорија
+    <select formControlName="categoryId">
+      <option [ngValue]="0" disabled>Што пријавувате?</option>
+      @for (c of categories(); track c.id) {
+        <option [ngValue]="c.id">{{ c.nameMk }}</option>
+      }
+    </select>
+  </label>
+
+  <label>
+    Наслов
+    <input formControlName="title" maxlength="120" />
+  </label>
+
+  <label>
+    Опис
+    <textarea formControlName="description" rows="4"></textarea>
+  </label>
+
+  <label>
+    Сериозност
+    <select formControlName="severity">
+      @for (s of severities; track s.value) {
+        <option [ngValue]="s.value">{{ s.label }}</option>
+      }
+    </select>
+  </label>
+
+  @if (authorities().length) {
+    <fieldset>
+      <legend>Надлежна институција</legend>
+      @for (a of authorities(); track a.id) {
+        <label class="check">
+          <input
+            type="checkbox"
+            [checked]="form.controls.authorityIds.value.includes(a.id)"
+            (change)="toggleAuthority(a.id, $any($event.target).checked)"
+          />
+          {{ a.name }} <small>({{ a.isNational ? 'државна' : 'локална' }})</small>
+        </label>
+      }
+    </fieldset>
+  }
+
+  <fieldset>
+    <legend>Фотографии (до 5)</legend>
+    <input type="file" accept="image/jpeg,image/png,image/webp,image/heic" multiple (change)="addPhotos($event)" />
+    <ul class="photos">
+      @for (p of photos(); track $index) {
+        <li>{{ p.name }} <button type="button" (click)="removePhoto($index)">Отстрани</button></li>
+      }
+    </ul>
+    <p class="hint">Ве молиме не фотографирајте лица и регистарски таблички.</p>
+  </fieldset>
+
+  @if (willBeAnonymous()) {
+    <fieldset>
+      <legend>Анонимна пријава</legend>
+      <p class="hint">
+        Не сте најавени, па пријавата ќе биде анонимна. Модератор ќе ја одобри пред да стане јавна.
+        Ќе добиете приватен линк за следење.
+      </p>
+      <input formControlName="contactEmail" type="email" placeholder="Е-пошта за известувања (по избор)" />
+    </fieldset>
+  } @else {
+    <label class="check">
+      <input type="checkbox" formControlName="anonymous" />
+      Не го прикажувај моето име јавно
+    </label>
+  }
+
+  @if (error()) {
+    <p class="error">{{ error() }}</p>
+  }
+
+  <button class="primary" type="submit" [disabled]="submitting()">Испрати пријава</button>
+</form>

@@ -1,0 +1,11 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/Gjubrarko.Api/Gjubrarko.Api.csproj" />
+    <Project Path="src/Gjubrarko.Application/Gjubrarko.Application.csproj" />
+    <Project Path="src/Gjubrarko.Domain/Gjubrarko.Domain.csproj" />
+    <Project Path="src/Gjubrarko.Infrastructure/Gjubrarko.Infrastructure.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/Gjubrarko.UnitTests/Gjubrarko.UnitTests.csproj" />
+  </Folder>
+</Solution>

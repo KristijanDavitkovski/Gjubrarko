@@ -1,0 +1,49 @@
+@if (created()) {
+  <div class="notice">
+    <strong>Пријавата е испратена.</strong>
+    @if (t()) {
+      <p>
+        Анонимните пријави ги проверува модератор пред да станат јавни. Зачувајте го овој приватен линк за да ја
+        следите пријавата:
+      </p>
+      <code>{{ trackingLink }}</code>
+    }
+  </div>
+}
+
+@if (report(); as r) {
+  <article>
+    <p class="meta">{{ r.publicNumber }} · {{ r.municipality }} · {{ r.category }}</p>
+    <h1>{{ r.title }}</h1>
+    <span class="status" [attr.data-status]="r.status">{{ statusLabels[r.status] }}</span>
+    @if (r.description) {
+      <p>{{ r.description }}</p>
+    }
+    @if (r.addressText) {
+      <p class="meta">{{ r.addressText }}</p>
+    }
+
+    <div class="gallery">
+      @for (p of r.photos; track p.id) {
+        <a [href]="p.url" target="_blank" rel="noopener"><img [src]="p.thumbnailUrl" alt="Фотографија од пријавата" /></a>
+      }
+    </div>
+
+    <h2>Надлежни институции</h2>
+    <ul>
+      @for (a of r.assignments; track a.authorityId) {
+        <li>{{ a.authorityName }} {{ a.acceptedAt ? '· примено ' + (a.acceptedAt | date: 'dd.MM.yyyy') : '' }}</li>
+      }
+    </ul>
+
+    <h2>Тек на пријавата</h2>
+    <ol class="timeline">
+      <li>{{ r.createdAt | date: 'dd.MM.yyyy HH:mm' }} · Пријавено од {{ r.reporterName }}</li>
+      @for (h of r.timeline; track $index) {
+        <li>{{ h.changedAt | date: 'dd.MM.yyyy HH:mm' }} · {{ statusLabels[h.to] }} {{ h.note ? '· ' + h.note : '' }}</li>
+      }
+    </ol>
+  </article>
+} @else if (notFound()) {
+  <p>Пријавата не е пронајдена или сè уште чека одобрување.</p>
+}

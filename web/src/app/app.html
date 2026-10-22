@@ -1,0 +1,19 @@
+<header>
+  <a class="brand" routerLink="/">Ѓубрарко</a>
+  <nav>
+    <a routerLink="/reports/new">Пријави</a>
+    @if (auth.isModerator()) {
+      <a routerLink="/admin/pending">Одобрување</a>
+    }
+    @if (auth.user(); as user) {
+      <span>{{ user.displayName }}</span>
+      <button (click)="auth.logout()">Одјава</button>
+    } @else {
+      <a routerLink="/login">Најава</a>
+    }
+  </nav>
+</header>
+
+<main>
+  <router-outlet />
+</main>

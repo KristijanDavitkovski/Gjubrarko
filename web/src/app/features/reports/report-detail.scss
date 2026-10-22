@@ -1,0 +1,32 @@
+.notice {
+  padding: 12px 16px;
+  margin-bottom: 16px;
+  border-radius: 8px;
+  background: var(--accent-soft);
+
+  code {
+    word-break: break-all;
+  }
+}
+
+.meta {
+  color: var(--muted);
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 16px 0;
+
+  img {
+    width: 160px;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+}
+
+.timeline {
+  padding-left: 18px;
+}

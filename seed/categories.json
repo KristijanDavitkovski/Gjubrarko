@@ -1,0 +1,14 @@
+[
+  { "code": "illegal-dump", "defaultAuthorityType": "communal-inspection", "icon": "delete_forever", "nameEn": "Illegal dump", "nameMk": "Дива депонија" },
+  { "code": "overflowing-containers", "defaultAuthorityType": "communal-utility", "icon": "delete", "nameEn": "Overflowing or broken containers", "nameMk": "Преполни или скршени контејнери" },
+  { "code": "litter", "defaultAuthorityType": "communal-utility", "icon": "cleaning_services", "nameEn": "Litter in a street, park or riverbank", "nameMk": "Отпад на улица, парк или речен брег" },
+  { "code": "construction-waste", "defaultAuthorityType": "communal-inspection", "icon": "construction", "nameEn": "Construction waste and rubble", "nameMk": "Градежен отпад и шут" },
+  { "code": "burning-waste", "defaultAuthorityType": "environmental-inspectorate", "icon": "local_fire_department", "nameEn": "Burning waste or tires", "nameMk": "Палење отпад или гуми" },
+  { "code": "industrial-pollution", "defaultAuthorityType": "environmental-inspectorate", "icon": "factory", "nameEn": "Industrial air, water or soil pollution", "nameMk": "Индустриско загадување на воздух, вода или почва" },
+  { "code": "water-pollution", "defaultAuthorityType": "environmental-inspectorate", "icon": "water", "nameEn": "Polluted river, lake or canal", "nameMk": "Загадена река, езеро или канал" },
+  { "code": "hazardous-waste", "defaultAuthorityType": "environmental-inspectorate", "icon": "warning", "nameEn": "Hazardous or medical waste", "nameMk": "Опасен или медицински отпад" },
+  { "code": "dead-animal", "defaultAuthorityType": "veterinary-hygiene", "icon": "pets", "nameEn": "Dead animal", "nameMk": "Мртво животно" },
+  { "code": "road-litter", "defaultAuthorityType": "state-roads", "icon": "add_road", "nameEn": "Trash along a state road or highway", "nameMk": "Отпад покрај државен пат или автопат" },
+  { "code": "forest-litter", "defaultAuthorityType": "national-forests", "icon": "forest", "nameEn": "Trash in a forest or protected area", "nameMk": "Отпад во шума или заштитено подрачје" },
+  { "code": "sewage-leak", "defaultAuthorityType": "water-utility", "icon": "plumbing", "nameEn": "Broken water or sewage pipe causing pollution", "nameMk": "Скршена водоводна или канализациска цевка" }
+]

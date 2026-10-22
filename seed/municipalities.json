@@ -1,0 +1,569 @@
+[
+  {
+    "slug": "skopje",
+    "nameEn": "City of Skopje",
+    "nameMk": "Град Скопје",
+    "nameSq": "Qyteti i Shkupit",
+    "parentSlug": null
+  },
+  {
+    "slug": "aerodrom",
+    "nameEn": "Aerodrom",
+    "nameMk": "Аеродром",
+    "nameSq": "Aerodrom",
+    "parentSlug": "skopje"
+  },
+  {
+    "slug": "butel",
+    "nameEn": "Butel",
+    "nameMk": "Бутел",
+    "nameSq": "Butel",
+    "parentSlug": "skopje"
+  },
+  {
+    "slug": "gazi-baba",
+    "nameEn": "Gazi Baba",
+    "nameMk": "Гази Баба",
+    "nameSq": "Gazi Baba",
+    "parentSlug": "skopje"
+  },
+  {
+    "slug": "gjorce-petrov",
+    "nameEn": "Gjorče Petrov",
+    "nameMk": "Ѓорче Петров",
+    "nameSq": "Gjorče Petrov",
+    "parentSlug": "skopje"
+  },
+  {
+    "slug": "karpos",
+    "nameEn": "Karpoš",
+    "nameMk": "Карпош",
+    "nameSq": "Karpoš",
+    "parentSlug": "skopje"
+  },
+  {
+    "slug": "kisela-voda",
+    "nameEn": "Kisela Voda",
+    "nameMk": "Кисела Вода",
+    "nameSq": "Kisela Voda",
+    "parentSlug": "skopje"
+  },
+  {
+    "slug": "saraj",
+    "nameEn": "Saraj",
+    "nameMk": "Сарај",
+    "nameSq": "Saraj",
+    "parentSlug": "skopje"
+  },
+  {
+    "slug": "centar",
+    "nameEn": "Centar",
+    "nameMk": "Центар",
+    "nameSq": "Centar",
+    "parentSlug": "skopje"
+  },
+  {
+    "slug": "cair",
+    "nameEn": "Čair",
+    "nameMk": "Чаир",
+    "nameSq": "Čair",
+    "parentSlug": "skopje"
+  },
+  {
+    "slug": "suto-orizari",
+    "nameEn": "Šuto Orizari",
+    "nameMk": "Шуто Оризари",
+    "nameSq": "Šuto Orizari",
+    "parentSlug": "skopje"
+  },
+  {
+    "slug": "aracinovo",
+    "nameEn": "Aračinovo",
+    "nameMk": "Арачиново",
+    "nameSq": "Aračinovo",
+    "parentSlug": null
+  },
+  {
+    "slug": "berovo",
+    "nameEn": "Berovo",
+    "nameMk": "Берово",
+    "nameSq": "Berovo",
+    "parentSlug": null
+  },
+  {
+    "slug": "bitola",
+    "nameEn": "Bitola",
+    "nameMk": "Битола",
+    "nameSq": "Bitola",
+    "parentSlug": null
+  },
+  {
+    "slug": "bogdanci",
+    "nameEn": "Bogdanci",
+    "nameMk": "Богданци",
+    "nameSq": "Bogdanci",
+    "parentSlug": null
+  },
+  {
+    "slug": "bogovinje",
+    "nameEn": "Bogovinje",
+    "nameMk": "Боговиње",
+    "nameSq": "Bogovinje",
+    "parentSlug": null
+  },
+  {
+    "slug": "bosilovo",
+    "nameEn": "Bosilovo",
+    "nameMk": "Босилово",
+    "nameSq": "Bosilovo",
+    "parentSlug": null
+  },
+  {
+    "slug": "brvenica",
+    "nameEn": "Brvenica",
+    "nameMk": "Брвеница",
+    "nameSq": "Brvenica",
+    "parentSlug": null
+  },
+  {
+    "slug": "centar-zupa",
+    "nameEn": "Centar Župa",
+    "nameMk": "Центар Жупа",
+    "nameSq": "Centar Župa",
+    "parentSlug": null
+  },
+  {
+    "slug": "caska",
+    "nameEn": "Čaška",
+    "nameMk": "Чашка",
+    "nameSq": "Čaška",
+    "parentSlug": null
+  },
+  {
+    "slug": "cesinovo-oblesevo",
+    "nameEn": "Češinovo-Obleševo",
+    "nameMk": "Чешиново-Облешево",
+    "nameSq": "Češinovo-Obleševo",
+    "parentSlug": null
+  },
+  {
+    "slug": "cucer-sandevo",
+    "nameEn": "Čučer-Sandevo",
+    "nameMk": "Чучер-Сандево",
+    "nameSq": "Čučer-Sandevo",
+    "parentSlug": null
+  },
+  {
+    "slug": "debar",
+    "nameEn": "Debar",
+    "nameMk": "Дебар",
+    "nameSq": "Debar",
+    "parentSlug": null
+  },
+  {
+    "slug": "debarca",
+    "nameEn": "Debarca",
+    "nameMk": "Дебарца",
+    "nameSq": "Debarca",
+    "parentSlug": null
+  },
+  {
+    "slug": "delcevo",
+    "nameEn": "Delčevo",
+    "nameMk": "Делчево",
+    "nameSq": "Delčevo",
+    "parentSlug": null
+  },
+  {
+    "slug": "demir-hisar",
+    "nameEn": "Demir Hisar",
+    "nameMk": "Демир Хисар",
+    "nameSq": "Demir Hisar",
+    "parentSlug": null
+  },
+  {
+    "slug": "demir-kapija",
+    "nameEn": "Demir Kapija",
+    "nameMk": "Демир Капија",
+    "nameSq": "Demir Kapija",
+    "parentSlug": null
+  },
+  {
+    "slug": "dojran",
+    "nameEn": "Dojran",
+    "nameMk": "Дојран",
+    "nameSq": "Dojran",
+    "parentSlug": null
+  },
+  {
+    "slug": "dolneni",
+    "nameEn": "Dolneni",
+    "nameMk": "Долнени",
+    "nameSq": "Dolneni",
+    "parentSlug": null
+  },
+  {
+    "slug": "gevgelija",
+    "nameEn": "Gevgelija",
+    "nameMk": "Гевгелија",
+    "nameSq": "Gevgelija",
+    "parentSlug": null
+  },
+  {
+    "slug": "gostivar",
+    "nameEn": "Gostivar",
+    "nameMk": "Гостивар",
+    "nameSq": "Gostivar",
+    "parentSlug": null
+  },
+  {
+    "slug": "gradsko",
+    "nameEn": "Gradsko",
+    "nameMk": "Градско",
+    "nameSq": "Gradsko",
+    "parentSlug": null
+  },
+  {
+    "slug": "ilinden",
+    "nameEn": "Ilinden",
+    "nameMk": "Илинден",
+    "nameSq": "Ilinden",
+    "parentSlug": null
+  },
+  {
+    "slug": "jegunovce",
+    "nameEn": "Jegunovce",
+    "nameMk": "Јегуновце",
+    "nameSq": "Jegunovce",
+    "parentSlug": null
+  },
+  {
+    "slug": "karbinci",
+    "nameEn": "Karbinci",
+    "nameMk": "Карбинци",
+    "nameSq": "Karbinci",
+    "parentSlug": null
+  },
+  {
+    "slug": "kavadarci",
+    "nameEn": "Kavadarci",
+    "nameMk": "Кавадарци",
+    "nameSq": "Kavadarci",
+    "parentSlug": null
+  },
+  {
+    "slug": "kicevo",
+    "nameEn": "Kičevo",
+    "nameMk": "Кичево",
+    "nameSq": "Kičevo",
+    "parentSlug": null
+  },
+  {
+    "slug": "kocani",
+    "nameEn": "Kočani",
+    "nameMk": "Кочани",
+    "nameSq": "Kočani",
+    "parentSlug": null
+  },
+  {
+    "slug": "konce",
+    "nameEn": "Konče",
+    "nameMk": "Конче",
+    "nameSq": "Konče",
+    "parentSlug": null
+  },
+  {
+    "slug": "kratovo",
+    "nameEn": "Kratovo",
+    "nameMk": "Кратово",
+    "nameSq": "Kratovo",
+    "parentSlug": null
+  },
+  {
+    "slug": "kriva-palanka",
+    "nameEn": "Kriva Palanka",
+    "nameMk": "Крива Паланка",
+    "nameSq": "Kriva Palanka",
+    "parentSlug": null
+  },
+  {
+    "slug": "krivogastani",
+    "nameEn": "Krivogaštani",
+    "nameMk": "Кривогаштани",
+    "nameSq": "Krivogaštani",
+    "parentSlug": null
+  },
+  {
+    "slug": "krusevo",
+    "nameEn": "Kruševo",
+    "nameMk": "Крушево",
+    "nameSq": "Kruševo",
+    "parentSlug": null
+  },
+  {
+    "slug": "kumanovo",
+    "nameEn": "Kumanovo",
+    "nameMk": "Куманово",
+    "nameSq": "Kumanovo",
+    "parentSlug": null
+  },
+  {
+    "slug": "lipkovo",
+    "nameEn": "Lipkovo",
+    "nameMk": "Липково",
+    "nameSq": "Lipkovo",
+    "parentSlug": null
+  },
+  {
+    "slug": "lozovo",
+    "nameEn": "Lozovo",
+    "nameMk": "Лозово",
+    "nameSq": "Lozovo",
+    "parentSlug": null
+  },
+  {
+    "slug": "makedonska-kamenica",
+    "nameEn": "Makedonska Kamenica",
+    "nameMk": "Македонска Каменица",
+    "nameSq": "Makedonska Kamenica",
+    "parentSlug": null
+  },
+  {
+    "slug": "makedonski-brod",
+    "nameEn": "Makedonski Brod",
+    "nameMk": "Македонски Брод",
+    "nameSq": "Makedonski Brod",
+    "parentSlug": null
+  },
+  {
+    "slug": "mavrovo-i-rostusa",
+    "nameEn": "Mavrovo i Rostuša",
+    "nameMk": "Маврово и Ростуша",
+    "nameSq": "Mavrovo i Rostuša",
+    "parentSlug": null
+  },
+  {
+    "slug": "mogila",
+    "nameEn": "Mogila",
+    "nameMk": "Могила",
+    "nameSq": "Mogila",
+    "parentSlug": null
+  },
+  {
+    "slug": "negotino",
+    "nameEn": "Negotino",
+    "nameMk": "Неготино",
+    "nameSq": "Negotino",
+    "parentSlug": null
+  },
+  {
+    "slug": "novaci",
+    "nameEn": "Novaci",
+    "nameMk": "Новаци",
+    "nameSq": "Novaci",
+    "parentSlug": null
+  },
+  {
+    "slug": "novo-selo",
+    "nameEn": "Novo Selo",
+    "nameMk": "Ново Село",
+    "nameSq": "Novo Selo",
+    "parentSlug": null
+  },
+  {
+    "slug": "ohrid",
+    "nameEn": "Ohrid",
+    "nameMk": "Охрид",
+    "nameSq": "Ohrid",
+    "parentSlug": null
+  },
+  {
+    "slug": "pehcevo",
+    "nameEn": "Pehčevo",
+    "nameMk": "Пехчево",
+    "nameSq": "Pehčevo",
+    "parentSlug": null
+  },
+  {
+    "slug": "petrovec",
+    "nameEn": "Petrovec",
+    "nameMk": "Петровец",
+    "nameSq": "Petrovec",
+    "parentSlug": null
+  },
+  {
+    "slug": "plasnica",
+    "nameEn": "Plasnica",
+    "nameMk": "Пласница",
+    "nameSq": "Plasnica",
+    "parentSlug": null
+  },
+  {
+    "slug": "prilep",
+    "nameEn": "Prilep",
+    "nameMk": "Прилеп",
+    "nameSq": "Prilep",
+    "parentSlug": null
+  },
+  {
+    "slug": "probistip",
+    "nameEn": "Probištip",
+    "nameMk": "Пробиштип",
+    "nameSq": "Probištip",
+    "parentSlug": null
+  },
+  {
+    "slug": "radovis",
+    "nameEn": "Radoviš",
+    "nameMk": "Радовиш",
+    "nameSq": "Radoviš",
+    "parentSlug": null
+  },
+  {
+    "slug": "rankovce",
+    "nameEn": "Rankovce",
+    "nameMk": "Ранковце",
+    "nameSq": "Rankovce",
+    "parentSlug": null
+  },
+  {
+    "slug": "resen",
+    "nameEn": "Resen",
+    "nameMk": "Ресен",
+    "nameSq": "Resen",
+    "parentSlug": null
+  },
+  {
+    "slug": "rosoman",
+    "nameEn": "Rosoman",
+    "nameMk": "Росоман",
+    "nameSq": "Rosoman",
+    "parentSlug": null
+  },
+  {
+    "slug": "sopiste",
+    "nameEn": "Sopište",
+    "nameMk": "Сопиште",
+    "nameSq": "Sopište",
+    "parentSlug": null
+  },
+  {
+    "slug": "staro-nagoricane",
+    "nameEn": "Staro Nagoričane",
+    "nameMk": "Старо Нагоричане",
+    "nameSq": "Staro Nagoričane",
+    "parentSlug": null
+  },
+  {
+    "slug": "stip",
+    "nameEn": "Štip",
+    "nameMk": "Штип",
+    "nameSq": "Štip",
+    "parentSlug": null
+  },
+  {
+    "slug": "struga",
+    "nameEn": "Struga",
+    "nameMk": "Струга",
+    "nameSq": "Struga",
+    "parentSlug": null
+  },
+  {
+    "slug": "strumica",
+    "nameEn": "Strumica",
+    "nameMk": "Струмица",
+    "nameSq": "Strumica",
+    "parentSlug": null
+  },
+  {
+    "slug": "studenicani",
+    "nameEn": "Studeničani",
+    "nameMk": "Студеничани",
+    "nameSq": "Studeničani",
+    "parentSlug": null
+  },
+  {
+    "slug": "sveti-nikole",
+    "nameEn": "Sveti Nikole",
+    "nameMk": "Свети Николе",
+    "nameSq": "Sveti Nikole",
+    "parentSlug": null
+  },
+  {
+    "slug": "tearce",
+    "nameEn": "Tearce",
+    "nameMk": "Теарце",
+    "nameSq": "Tearce",
+    "parentSlug": null
+  },
+  {
+    "slug": "tetovo",
+    "nameEn": "Tetovo",
+    "nameMk": "Тетово",
+    "nameSq": "Tetovo",
+    "parentSlug": null
+  },
+  {
+    "slug": "valandovo",
+    "nameEn": "Valandovo",
+    "nameMk": "Валандово",
+    "nameSq": "Valandovo",
+    "parentSlug": null
+  },
+  {
+    "slug": "vasilevo",
+    "nameEn": "Vasilevo",
+    "nameMk": "Василево",
+    "nameSq": "Vasilevo",
+    "parentSlug": null
+  },
+  {
+    "slug": "veles",
+    "nameEn": "Veles",
+    "nameMk": "Велес",
+    "nameSq": "Veles",
+    "parentSlug": null
+  },
+  {
+    "slug": "vevcani",
+    "nameEn": "Vevčani",
+    "nameMk": "Вевчани",
+    "nameSq": "Vevčani",
+    "parentSlug": null
+  },
+  {
+    "slug": "vinica",
+    "nameEn": "Vinica",
+    "nameMk": "Виница",
+    "nameSq": "Vinica",
+    "parentSlug": null
+  },
+  {
+    "slug": "vrapciste",
+    "nameEn": "Vrapčište",
+    "nameMk": "Врапчиште",
+    "nameSq": "Vrapčište",
+    "parentSlug": null
+  },
+  {
+    "slug": "zelenikovo",
+    "nameEn": "Zelenikovo",
+    "nameMk": "Зелениково",
+    "nameSq": "Zelenikovo",
+    "parentSlug": null
+  },
+  {
+    "slug": "zrnovci",
+    "nameEn": "Zrnovci",
+    "nameMk": "Зрновци",
+    "nameSq": "Zrnovci",
+    "parentSlug": null
+  },
+  {
+    "slug": "zelino",
+    "nameEn": "Želino",
+    "nameMk": "Желино",
+    "nameSq": "Želino",
+    "parentSlug": null
+  }
+]
