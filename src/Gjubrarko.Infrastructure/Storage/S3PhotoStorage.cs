@@ -19,6 +19,13 @@ public class S3PhotoStorage(IAmazonS3 s3, IOptions<StorageOptions> options) : IP
 {
     private readonly StorageOptions _options = options.Value;
 
+    public async Task EnsureBucketAsync(CancellationToken ct)
+    {
+        var buckets = await s3.ListBucketsAsync(ct);
+        if (buckets.Buckets?.Any(b => b.BucketName == _options.Bucket) != true)
+            await s3.PutBucketAsync(_options.Bucket, ct);
+    }
+
     public Task UploadAsync(string key, Stream content, string contentType, CancellationToken ct) =>
         s3.PutObjectAsync(new PutObjectRequest
         {
@@ -35,5 +42,7 @@ public class S3PhotoStorage(IAmazonS3 s3, IOptions<StorageOptions> options) : IP
             Key = key,
             Verb = HttpVerb.GET,
             Expires = DateTime.UtcNow.AddMinutes(_options.ReadUrlMinutes),
+            // The SDK signs https links by default; local storage runs on plain http.
+            Protocol = _options.ServiceUrl.StartsWith("http://", StringComparison.OrdinalIgnoreCase) ? Protocol.HTTP : Protocol.HTTPS,
         });
 }

@@ -6,7 +6,7 @@ they go public) or from an account (public right away).
 
 - Backend: ASP.NET Core (.NET 10), EF Core, PostgreSQL + PostGIS
 - Frontend: Angular, Leaflet + OpenStreetMap
-- Photos: S3-compatible storage (MinIO locally), re-encoded to WebP with metadata removed (Magick.NET)
+- Photos: S3-compatible storage (SeaweedFS locally), re-encoded to WebP with metadata removed (Magick.NET)
 
 ## Layout
 
@@ -25,13 +25,13 @@ seed/                         municipalities, authority types and categories (lo
 Prerequisites: .NET 10 SDK, Node 22.22+ or 24+, Docker.
 
 ```bash
-docker compose up -d                       # Postgres/PostGIS, MinIO (+ bucket), Mailpit
+docker compose up -d                       # Postgres/PostGIS, SeaweedFS (S3 storage), Mailpit
 cd src/Gjubrarko.Api && dotnet run         # http://localhost:5063, applies migrations and seeds data
 cd web && npm install && npm start         # http://localhost:4200, proxies /api to the API
 ```
 
-In Development the API migrates the database and loads `seed/` on start. MinIO's console is at http://localhost:9001
-(gjubrarko / gjubrarko-secret).
+In Development the API migrates the database, loads `seed/` and creates the photo bucket on start.
+Sent emails are visible in Mailpit at http://localhost:8025.
 
 To make someone a moderator, register them in the app and then add the role in SQL:
 

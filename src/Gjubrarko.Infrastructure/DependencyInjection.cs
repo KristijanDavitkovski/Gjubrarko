@@ -28,7 +28,8 @@ public static class DependencyInjection
             var o = sp.GetRequiredService<IOptions<StorageOptions>>().Value;
             return new AmazonS3Client(o.AccessKey, o.SecretKey, new AmazonS3Config { ServiceURL = o.ServiceUrl, ForcePathStyle = true });
         });
-        services.AddSingleton<IPhotoStorage, S3PhotoStorage>();
+        services.AddSingleton<S3PhotoStorage>();
+        services.AddSingleton<IPhotoStorage>(sp => sp.GetRequiredService<S3PhotoStorage>());
         services.AddSingleton<IImageProcessor, MagickImageProcessor>();
         return services;
     }

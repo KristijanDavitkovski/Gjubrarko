@@ -7,6 +7,7 @@ using Gjubrarko.Application.Common;
 using Gjubrarko.Infrastructure;
 using Gjubrarko.Infrastructure.Identity;
 using Gjubrarko.Infrastructure.Persistence;
+using Gjubrarko.Infrastructure.Storage;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Diagnostics;
 using Microsoft.AspNetCore.Identity;
@@ -101,6 +102,7 @@ if (app.Environment.IsDevelopment())
     await scope.ServiceProvider.GetRequiredService<AppDbContext>().Database.MigrateAsync();
     await scope.ServiceProvider.GetRequiredService<DataSeeder>()
         .SeedAsync(Path.Combine(app.Environment.ContentRootPath, app.Configuration["SeedFolder"] ?? "../../seed"));
+    await scope.ServiceProvider.GetRequiredService<S3PhotoStorage>().EnsureBucketAsync(CancellationToken.None);
 }
 
 app.UseCors();

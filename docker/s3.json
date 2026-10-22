@@ -1,0 +1,11 @@
+{
+  "identities": [
+    {
+      "name": "gjubrarko",
+      "credentials": [
+        { "accessKey": "gjubrarko", "secretKey": "gjubrarko-secret" }
+      ],
+      "actions": ["Admin", "Read", "Write", "List", "Tagging"]
+    }
+  ]
+}
